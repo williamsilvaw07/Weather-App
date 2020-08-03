@@ -165,7 +165,7 @@
                           $("body").addClass('body_clear')
 
 
-                      } else {
+                      } else(tempinfo === '') {
                           $("body").addClass('backgroundimage_recall')
                       }
 
