@@ -175,9 +175,6 @@ window.addEventListener("load", () => {
 
 
         });
-    } else {
-        // Fallback for no geolocation
-        geolocFail();
     }
 
 
@@ -263,7 +260,7 @@ window.addEventListener("load", () => {
 
                     var imageApi_first = daily_day_icons_1 + '@2x.png';
                     var image_ulr_api_1 = imageUlr_daily + imageApi_first;
-                    ///end         
+                    ///end
 
 
                     ////add the day
@@ -280,7 +277,7 @@ window.addEventListener("load", () => {
 
 
 
-                    ///Second day block 
+                    ///Second day block
                     ///gets the day
                     var daily_day = data.daily[2].dt;
                     var daily_day_convert = new Date(daily_day * 1000)
@@ -317,7 +314,7 @@ window.addEventListener("load", () => {
 
                     var imageApi_second = daily_day_icons_2 + '@2x.png';
                     var image_ulr_api_2 = imageUlr_daily + imageApi_second;
-                    ///end         
+                    ///end
 
 
                     ////add the day
@@ -335,7 +332,7 @@ window.addEventListener("load", () => {
 
 
 
-                    ///third day block 
+                    ///third day block
                     ///gets the day
                     var daily_day = data.daily[3].dt;
                     var daily_day_convert = new Date(daily_day * 1000)
@@ -372,7 +369,7 @@ window.addEventListener("load", () => {
 
                     var imageApi_second = daily_day_icons_2 + '@2x.png';
                     var image_ulr_api_2 = imageUlr_daily + imageApi_second;
-                    ///end         
+                    ///end
 
 
                     ////add the day
@@ -390,7 +387,7 @@ window.addEventListener("load", () => {
 
 
 
-                    ///4th day block 
+                    ///4th day block
                     ///gets the day
                     var daily_day = data.daily[4].dt;
                     var daily_day_convert = new Date(daily_day * 1000)
@@ -427,7 +424,7 @@ window.addEventListener("load", () => {
 
                     var imageApi_second = daily_day_icons_2 + '@2x.png';
                     var image_ulr_api_2 = imageUlr_daily + imageApi_second;
-                    ///end         
+                    ///end
 
 
                     ////add the day
@@ -447,9 +444,6 @@ window.addEventListener("load", () => {
 
 
         });
-    } else {
-        // Fallback for no geolocation
-        geolocFail();
-    }
+    } 
 
 });
