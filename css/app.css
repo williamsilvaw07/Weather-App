@@ -443,7 +443,7 @@ path {
 .inner-grid {
     width: 120px;
     height: 180px;
-    background-color: rgba(250, 250, 250, 0.7);
+    background-color: rgba(250, 250, 250, 0.9);
     -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 4px;
     box-shadow: rgba(0, 0, 0, 0.55) 0px 4px 4px;
     display: block;
@@ -692,5 +692,109 @@ path {
 
     }
 
+
+}
+
+
+/**less then 380px***/
+
+
+
+@media only screen and (max-width: 380px) {
+    .current_weather_box {
+
+        width: 300px;
+        height: 400px;
+
+        margin-top: 100px
+    }
+
+    .tem{
+        margin-left: -20px
+    }
+    
+    .date_city{
+        margin-left: 30px
+    }
+
+    .inner-grid {
+        width: 80px;
+        height: 120px;
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+
+    .inner-grid h2 {
+
+        font-size: 10px;
+    }
+
+    .days_grid h1 {
+
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .weather_info {
+
+        position: relative;
+        right: 220px;
+        width: 100px;
+        top: -50px
+    }
+
+
+
+    .current_weather_box h1 {
+
+
+        font-size: 40px;
+
+    }
+
+    .inner-grid img {
+        height: 40px;
+        margin-top: 0px
+    }
+
+    .weather_info{
+        margin-top: 10px
+    }
+    .weather_info p{
+        font-size: 12px
+    }
+
+    #weather_icon {
+        height: 60px;
+    }
+
+    .weather_info h4 {
+
+        font-size: 15px;
+    }
+
+    .date_city h3 {
+        font-size: 18px;
+
+    }
+
+    .date_city p,
+    .weather_info {
+        font-size: 14px;
+
+    }
+
+    .date_city p span {
+        font-size: 9px;
+
+    }
+    
+    #date{
+        font-size: 10px
+    }
+    #location{
+          font-size: 16px
+    }
 
 }
