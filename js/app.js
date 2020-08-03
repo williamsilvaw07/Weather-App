@@ -1,34 +1,13 @@
   setTimeout(function () {
       $(".loader-wrapper").fadeOut().empty();
-  }, 5000);
+  }, 4000);
   window.addEventListener("load", () => {
 
       var lat;
       var long;
 
-      var getLocationButton_div = document.querySelector("#use_location_div")
-      var getLocationButton = document.querySelector("#use_location")
-
-      getLocationButton.addEventListener("click", function () {
 
 
-          if (navigator.geolocation) {
-              navigator.geolocation.getCurrentPosition(position => {
-
-                  console.log(position);
-
-                  lat = position.coords.latitude
-                  long = position.coords.longitude;
-
-                  console.log("clicked")
-
-
-              });
-          }
-
-          getLocationButton_div.style.display = "none"
-
-      });
 
 
       var cityName = document.querySelector("#location");
@@ -48,10 +27,6 @@
 
               lat = position.coords.latitude
               long = position.coords.longitude;
-
-
-
-
 
 
               var apiFrist = 'http://api.openweathermap.org/data/2.5/weather?lat='
