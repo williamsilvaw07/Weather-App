@@ -709,17 +709,17 @@ path {
         margin-top: 100px
     }
 
-    .tem{
+    .tem {
         margin-left: -20px
     }
-    
-    .date_city{
+
+    .date_city {
         margin-left: 30px
     }
 
     .inner-grid {
         width: 80px;
-        height: 120px;
+        height: 100px;
         margin-left: 5px;
         margin-right: 5px;
 
@@ -755,13 +755,14 @@ path {
 
     .inner-grid img {
         height: 40px;
-        margin-top: 0px
+        margin-top: -10px
     }
 
-    .weather_info{
+    .weather_info {
         margin-top: 10px
     }
-    .weather_info p{
+
+    .weather_info p {
         font-size: 12px
     }
 
@@ -789,12 +790,13 @@ path {
         font-size: 9px;
 
     }
-    
-    #date{
+
+    #date {
         font-size: 10px
     }
-    #location{
-          font-size: 16px
+
+    #location {
+        font-size: 16px
     }
 
 }
