@@ -37,7 +37,7 @@ var proxay = 'https://cors-anywhere.herokuapp.com/'
               var apiSecond = '&appid=e46fd6bc9f47f23616e7f525256b3f5a&units=metric'
 
 
-              var apiFinal = proxay + apiFrist + lat + '&lon=' + long + apiSecond
+              var apiFinal =  apiFrist + lat + '&lon=' + long + apiSecond
 
               fetch(apiFinal)
                   .then(response => {
@@ -420,7 +420,7 @@ var proxay = 'https://cors-anywhere.herokuapp.com/'
               var apiSecond = 'exclude=hourly,daily&appid=e46fd6bc9f47f23616e7f525256b3f5a&units=metric'
 
 
-              var apiFinal = proxay + apiFrist + lat + '&lon=' + long + '&%20' + apiSecond
+              var apiFinal = apiFrist + lat + '&lon=' + long + '&%20' + apiSecond
 
               fetch(apiFinal)
 
