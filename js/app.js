@@ -1,6 +1,9 @@
 
 
 
+  setTimeout(function () {
+      $(".loader-wrapper").fadeOut().empty();
+  }, 6000);
   window.addEventListener("load", () => {
 
       var lat;
