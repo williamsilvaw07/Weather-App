@@ -17,7 +17,7 @@
       var windSpeed = document.querySelector("#wind_speed");
       var iconhtml = document.querySelector("#weather_icon");
       var dateInner = document.querySelector("#date");
-      var imageUlr = "http://openweathermap.org/img/wn/"
+
       var backgorundImage = document.querySelector(".backgroundimage");
 
       if (navigator.geolocation) {
@@ -398,7 +398,7 @@ var proxay = 'https://cors-anywhere.herokuapp.com/'
   window.addEventListener("load", () => {
 
 
-      var imageUlr_daily = "http://openweathermap.org/img/wn/"
+
 
 
 
