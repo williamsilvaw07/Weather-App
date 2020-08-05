@@ -799,9 +799,6 @@ var proxay = 'https://cors-anywhere.herokuapp.com/'
 
 
 
-                setTimeout(function () {
-                    $(".loader-wrapper").fadeOut().empty();
-                }, 6000);
           });
       } else {
           // Fallback for no geolocation
