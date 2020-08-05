@@ -28,13 +28,13 @@
               lat = position.coords.latitude
               long = position.coords.longitude;
 
-
+var proxay = 'https://cors-anywhere.herokuapp.com/'
               var apiFrist = 'http://api.openweathermap.org/data/2.5/weather?lat='
 
               var apiSecond = '&appid=e46fd6bc9f47f23616e7f525256b3f5a&units=metric'
 
 
-              var apiFinal = apiFrist + lat + '&lon=' + long + apiSecond
+              var apiFinal = proxay + apiFrist + lat + '&lon=' + long + apiSecond
 
               fetch(apiFinal)
                   .then(response => {
@@ -131,12 +131,12 @@
                       console.log(tempinfo)
 
 
-                      ///this function will return if its day or night it will retuen true or false 
+                      ///this function will return if its day or night it will retuen true or false
                       function isDay() {
                           return (Date.now() + 60000 * new Date().getTimezoneOffset() + 21600000) % 86400000 / 3600000 > 12;
                       }
 
-                      /////few clouds night 
+                      /////few clouds night
 
                       if (tempinfo == "Clouds" && isDay() === false) {
 
@@ -158,7 +158,7 @@
 
 
 
-                      /////clear night 
+                      /////clear night
 
                       if (weatherDesc === 'clear sky' && isDay() === false) {
 
@@ -411,13 +411,13 @@
               long = position.coords.longitude;
 
 
-
+var proxay = 'https://cors-anywhere.herokuapp.com/'
               var apiFrist = 'https://api.openweathermap.org/data/2.5/onecall?lat='
 
               var apiSecond = 'exclude=hourly,daily&appid=e46fd6bc9f47f23616e7f525256b3f5a&units=metric'
 
 
-              var apiFinal = apiFrist + lat + '&lon=' + long + '&%20' + apiSecond
+              var apiFinal = proxay + apiFrist + lat + '&lon=' + long + '&%20' + apiSecond
 
               fetch(apiFinal)
 
@@ -468,7 +468,7 @@
                       var fristDayIcon = document.querySelector('#weather_icon_day1');
                       var daily_day_icons_2 = data1.daily[1].weather[0].main
 
-                      ///end         
+                      ///end
 
 
                       ////add the day
@@ -518,7 +518,7 @@
 
 
 
-                      ///Second day block 
+                      ///Second day block
                       ///gets the day
                       var daily_day = data1.daily[2].dt;
                       var daily_day_convert = new Date(daily_day * 1000)
@@ -553,7 +553,7 @@
                       var secondDaySectionIicon = document.querySelector("#weather_icon_day2");
 
 
-                      ///end         
+                      ///end
 
 
                       ////add the day
@@ -604,7 +604,7 @@
 
 
 
-                      ///third day block 
+                      ///third day block
                       ///gets the day
                       var daily_day = data1.daily[3].dt;
                       var daily_day_convert = new Date(daily_day * 1000)
@@ -640,7 +640,7 @@
                       var thirdDaySectionIicon = document.querySelector("#weather_icon_day3");
 
 
-                      ///end         
+                      ///end
 
 
                       ////add the day
@@ -694,7 +694,7 @@
 
 
 
-                      ///4th day block 
+                      ///4th day block
                       ///gets the day
                       var daily_day = data1.daily[4].dt;
                       var daily_day_convert = new Date(daily_day * 1000)
@@ -729,7 +729,7 @@
 
                       var fouthDaySectionIicon = document.querySelector("#weather_icon_day4");
 
-                      ///end         
+                      ///end
 
 
                       ////add the day
@@ -742,7 +742,7 @@
 
 
 
-                      ///end         
+                      ///end
 
 
                       ////add the day
