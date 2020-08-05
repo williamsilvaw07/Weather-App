@@ -29,7 +29,7 @@
               long = position.coords.longitude;
 
 var proxay = 'https://cors-anywhere.herokuapp.com/'
-              var apiFrist = 'http://api.openweathermap.org/data/2.5/weather?lat='
+              var apiFrist = 'https://api.openweathermap.org/data/2.5/weather?lat='
 
               var apiSecond = '&appid=e46fd6bc9f47f23616e7f525256b3f5a&units=metric'
 
