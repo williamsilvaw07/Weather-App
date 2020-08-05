@@ -1,10 +1,20 @@
 
-$(window).load(function() {
+
   setTimeout(function () {
       $(".loader-wrapper").fadeOut().empty();
   }, 3000);
- });
 
+  $(document).ready(function(){
+    $(document).ajaxStart(function(){
+      $("#wait").css("display", "block");
+    });
+    $(document).ajaxComplete(function(){
+      $("#wait").css("display", "none");
+    });
+    $("button").click(function(){
+      $("#txt").load("demo_ajax_load.asp");
+    });
+  });
 
   window.addEventListener("load", () => {
 
