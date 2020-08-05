@@ -414,7 +414,7 @@ var proxay = 'https://cors-anywhere.herokuapp.com/'
               long = position.coords.longitude;
 
 
-var proxay = 'https://cors-anywhere.herokuapp.com/'
+
               var apiFrist = 'https://api.openweathermap.org/data/2.5/onecall?lat='
 
               var apiSecond = 'exclude=hourly,daily&appid=e46fd6bc9f47f23616e7f525256b3f5a&units=metric'
