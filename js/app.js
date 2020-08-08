@@ -567,6 +567,8 @@ var proxay = 'https://cors-anywhere.herokuapp.com/'
                       ///adds the day image icons
                       var daily_day_icons_3 = data1.daily[2].weather[0].main
                       //rain
+                      console.log(daily_day_icons_3)
+                                    console.log('second day');
                       if (daily_day_icons_3 === 'Rain') {
                           secondDaySectionIicon.src = 'picture/icons/day_rain.png'
                       }
@@ -580,8 +582,8 @@ var proxay = 'https://cors-anywhere.herokuapp.com/'
 
 
                       //Clouds
-                      if (daily_day_icons_3 == 'Clouds') {
-                          secondDaySectionIicon.src = 'picture/icons/day_few_clouds.png.png'
+                      if (daily_day_icons_3 ==='Clouds') {
+                          secondDaySectionIicon.src = 'picture/icons/day_few_clouds.png'
                       }
 
 
